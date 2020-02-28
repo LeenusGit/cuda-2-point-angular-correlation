@@ -1,0 +1,8 @@
+read duration: 30 milliseconds
+Cuda initialization done in: 290 milliseconds
+Total angles in DR: 10000000000
+Total angles in DD: 10000000000
+Total angles in RR: 10000000000
+--------------------------
+GPU program finished 488 milliseconds.
+Main finished in 555 milliseconds.

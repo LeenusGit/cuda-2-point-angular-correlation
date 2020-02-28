@@ -1,0 +1,22 @@
+==127462== NVPROF is profiling process 127462, command: ./angcorr
+==127462== Profiling application: ./angcorr
+==127462== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   52.84%  51.982ms         2  25.991ms  25.978ms  26.005ms  cmpEqualAngles(Vec3D*, Vec3D*, int*, int)
+                   45.66%  44.924ms         1  44.924ms  44.924ms  44.924ms  cmpAngles(Vec3D*, Vec3D*, int*, int)
+                    1.08%  1.0655ms         3  355.18us  353.28us  356.35us  sumAngles(int*, int*, int)
+                    0.21%  208.09us         2  104.05us  104.03us  104.06us  [CUDA memcpy HtoD]
+                    0.20%  195.42us         6  32.570us  1.2480us  67.263us  [CUDA memset]
+                    0.01%  5.5030us         3  1.8340us  1.5360us  2.0470us  [CUDA memcpy DtoH]
+      API calls:   75.62%  238.07ms         5  47.614ms  48.760us  228.06ms  cudaFree
+                   23.12%  72.794ms         5  14.559ms  284.30us  45.349ms  cudaMemcpy
+                    0.53%  1.6613ms       388  4.2810us     143ns  174.30us  cuDeviceGetAttribute
+                    0.44%  1.3949ms         4  348.72us  345.32us  356.91us  cuDeviceTotalMem
+                    0.19%  604.68us         4  151.17us  8.0470us  233.74us  cudaMalloc
+                    0.04%  133.30us         4  33.325us  30.031us  35.795us  cuDeviceGetName
+                    0.03%  82.367us         6  13.727us  4.7260us  40.175us  cudaLaunchKernel
+                    0.02%  71.610us         6  11.935us  4.0140us  42.225us  cudaMemset
+                    0.00%  10.088us         4  2.5220us     983ns  5.3460us  cuDeviceGetPCIBusId
+                    0.00%  1.7790us         8     222ns     142ns     454ns  cuDeviceGet
+                    0.00%     915ns         3     305ns     157ns     511ns  cuDeviceGetCount
+                    0.00%     903ns         4     225ns     193ns     292ns  cuDeviceGetUuid
